@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Articles</title>
+</head>
+<body>
+<h1>Articles</h1>
+<ul>
+    {% for article in articles %}
+        </p>
+            <h2><a href="{{ 'article/' ~ article.id }}">{{ article.title }}</a></h2>
+            <p>{{ article.description }}</p>
+        <p>Published: {{ article.timePosted }}</p>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

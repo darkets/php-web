@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ article.title }}</title>
+    <style>
+        img {
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.description }}</p>
+    <img src="{{ article.pictureUrl }}" alt="{{ article.title }}">
+    <p>Published on {{ article.timePosted|date('F j, Y, g:i a') }}</p>
+    <a href="/articles">Back to Articles</a>
+</body>
+</html>
